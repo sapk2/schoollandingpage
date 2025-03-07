@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suryodaya Vidhya Mandir</title>
+    <title>ABC International School</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
@@ -11,8 +11,8 @@
 <body class="bg-gray-100" onload="AOS.init();">
     <nav class="bg-blue-600 p-4 text-white flex justify-between items-center">
         <div class="flex items-center space-x-4">
-            <img src="./image/logo.png" alt="School Logo" class="h-10">
-            <h1 class="text-xl font-bold">Suryodaya Vidhya Mandir</h1>
+            <img src="./image/images (7).png" alt="School Logo" class="h-10">
+            <a href="index.html"><h1 class="text-xl font-bold">ABC International School</h1></a>
         </div>
         <ul class="flex space-x-4">
             <li><a href="#home" class="hover:underline">Home</a></li>
@@ -26,7 +26,7 @@
     
     <section id="home" class="text-center p-10 text-white bg-cover bg-center h-[500px] flex flex-col justify-center items-center relative" style="background-image: url('./image/school.jpg'); background-size: cover; background-position: fixed;" data-aos="fade-up">
         <div class="absolute inset-0 bg-black opacity-50"></div>
-        <h2 class="text-4xl font-bold text-gray-100 relative z-10">Welcome to Suryodaya Vidhya Mandir</h2>
+        <h2 class="text-4xl font-bold text-gray-100 relative z-10">Welcome to ABC International School</h2>
         <p class="mt-2 text-lg relative z-10">A place for quality education and holistic development.</p>
         <div class="mt-4 relative z-10">
             <a href="admission.html" class="bg-white text-blue-600 px-6 py-3 rounded shadow-lg">Apply Now</a>
@@ -34,35 +34,127 @@
         </div>
     </section>
     
-    <section id="classes" class="p-10">
-        <h2 class="text-2xl font-bold mb-4">Our Classes</h2>
-        <div class="grid grid-cols-3 gap-4">
-            <div class="bg-white p-4 shadow rounded" data-aos="fade-up">
-                <img src="./image/images.jpg" alt="Class" class="w-full mb-2">
-                <h3 class="font-bold">Nursery</h3>
-                <p>Foundation for young learners.</p>
-                <p><strong>Subjects:</strong> 5</p>
-                <p><strong>Students:</strong> 30</p>
-                
+    <section id="classes" class="p-10 bg-gray-50">
+        <h2 class="text-3xl font-bold text-center mb-8">Our Classes</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <!-- Class Template -->
+            <div class="bg-white p-6 shadow-lg rounded-lg transition-transform transform hover:scale-105" data-aos="fade-up">
+                <img src="./image/images.jpg" alt="Nursery Class" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Nursery</h3>
+                <p class="text-gray-600 mb-3">Foundation for young learners.</p>
+                <ul class="text-sm text-gray-700 mb-4">
+                    <li><strong>Subjects:</strong> 5</li>
+                    <li><strong>Students:</strong> 30</li>
+                    <!-- Add sections if applicable -->
+                </ul>
+                <a href="enroll.html" class="block text-center px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">Enroll Now</a>
             </div>
-            <div class="bg-white p-4 shadow rounded" data-aos="fade-up" data-aos-delay="100">
-                <img src="./image/images (1).jpg" alt="Class" class="w-full mb-2">
-                <h3 class="font-bold">Class 1</h3>
-                <p>Basic primary education.</p>
-                <p><strong>Subjects:</strong> 7</p>
-                <p><strong>Students:</strong> 35</p>
+    
+            <!-- Repeat for other classes -->
+            <!-- KG Class -->
+            <div class="bg-white p-6 shadow-lg rounded-lg transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="100">
+                <img src="./image/images.jpg" alt="KG Class" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">KG</h3>
+                <p class="text-gray-600 mb-3">Early childhood education.</p>
+                <ul class="text-sm text-gray-700 mb-4">
+                    <li><strong>Subjects:</strong> 6</li>
+                    <li><strong>Students:</strong> 25</li>
+                </ul>
+                <a href="enroll.html" class="block text-center px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">Enroll Now</a>
             </div>
-            <div class="bg-white p-4 shadow rounded" data-aos="fade-up" data-aos-delay="200">
-                <img src="./image/images (2).jpg" alt="Class" class="w-full mb-2">
-                <h3 class="font-bold">Class 10</h3>
-                <p>Preparation for board exams.</p>
-                <p><strong>Subjects:</strong> 10</p>
-                <p><strong>Students:</strong> 40</p>
+    
+            <!-- Class 1 -->
+            <div class="bg-white p-6 shadow-lg rounded-lg transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="200">
+                <img src="./image/images.jpg" alt="Class 1" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Class 1</h3>
+                <p class="text-gray-600 mb-3">Basic primary education.</p>
+                <ul class="text-sm text-gray-700 mb-4">
+                    <li><strong>Subjects:</strong> 7</li>
+                    <li><strong>Students:</strong> 35</li>
+                </ul>
+                <a href="enroll.html" class="block text-center px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">Enroll Now</a>
             </div>
+    
+            
+            <!-- Class 5 with Sections -->
+            <div class="bg-white p-6 shadow-lg rounded-lg transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="600">
+                <img src="./image/images.jpg" alt="Class 5" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Class 5</h3>
+                <p class="text-gray-600 mb-3">Preparing for higher levels of education.</p>
+                <ul class="text-sm text-gray-700 mb-4">
+                    <li><strong>Subjects:</strong> 10</li>
+                    <li><strong>Students:</strong> 30</li>
+                    <li><strong>Sections:</strong> Everest, Kanchenjunga, Lhotse</li>
+                </ul>
+                <a href="enroll.html" class="block text-center px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">Enroll Now</a>
+            </div>
+
+            <!-- Class 6 -->
+            <div class="bg-white p-6 shadow-lg rounded-lg transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="700">
+                <img src="./image/images.jpg" alt="Class 6" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Class 6</h3>
+                <p class="text-gray-600 mb-3">Building a strong academic foundation.</p>
+                <ul class="text-sm text-gray-700 mb-4">
+                    <li><strong>Subjects:</strong> 11</li>
+                    <li><strong>Students:</strong> 32</li>
+                </ul>
+                <a href="enroll.html" class="block text-center px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">Enroll Now</a>
+            </div>
+
+            <!-- Class 7 -->
+            <div class="bg-white p-6 shadow-lg rounded-lg transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="800">
+                <img src="./image/images.jpg" alt="Class 7" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Class 7</h3>
+                <p class="text-gray-600 mb-3">Enhancing critical thinking and problem-solving skills.</p>
+                <ul class="text-sm text-gray-700 mb-4">
+                    <li><strong>Subjects:</strong> 12</li>
+                    <li><strong>Students:</strong> 34</li>
+                </ul>
+                <a href="enroll.html" class="block text-center px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">Enroll Now</a>
+            </div>
+
+            <!-- Class 8 -->
+            <div class="bg-white p-6 shadow-lg rounded-lg transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="900">
+                <img src="./image/images.jpg" alt="Class 8" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Class 8</h3>
+                <p class="text-gray-600 mb-3">Preparing for high school challenges.</p>
+                <ul class="text-sm text-gray-700 mb-4">
+                    <li><strong>Subjects:</strong> 13</li>
+                    <li><strong>Students:</strong> 36</li>
+                </ul>
+                <a href="enroll.html" class="block text-center px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">Enroll Now</a>
+            </div>
+
+            <!-- Class 9 -->
+            <div class="bg-white p-6 shadow-lg rounded-lg transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="1000">
+                <img src="./image/images.jpg" alt="Class 9" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Class 9</h3>
+                <p class="text-gray-600 mb-3">Focusing on academic excellence and personal growth.</p>
+                <ul class="text-sm text-gray-700 mb-4">
+                    <li><strong>Subjects:</strong> 14</li>
+                    <li><strong>Students:</strong> 38</li>
+                </ul>
+                <a href="enroll.html" class="block text-center px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">Enroll Now</a>
+            </div>
+
+            <!-- Class 10 -->
+            <div class="bg-white p-6 shadow-lg rounded-lg transition-transform transform hover:scale-105" data-aos="fade-up" data-aos-delay="1100">
+                <img src="./image/images.jpg" alt="Class 10" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                <h3 class="text-xl font-semibold mb-2">Class 10</h3>
+                <p class="text-gray-600 mb-3">Preparing for board exams and future endeavors.</p>
+                <ul class="text-sm text-gray-700 mb-4">
+                    <li><strong>Subjects:</strong> 15</li>
+                    <li><strong>Students:</strong> 40</li>
+                </ul>
+                <a href="enroll.html" class="block text-center px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">Enroll Now</a>
+            </div></div>
+    
+            <!-- Repeat for other classes up to Class 10 -->
         </div>
     </section>
     
-    <section id="notice" class="p-10">
+    
+    <section id="notice" class="p-10" data-aos="fade-up" data-aos-delay="200">
         <h2 class="text-2xl font-bold mb-4">Notice Board</h2>
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
             <div class="bg-white p-4 shadow rounded" data-aos="zoom-in">
@@ -80,52 +172,383 @@
         </div>
     </section>
     
-    <section id="events" class="p-10">
-        <h2 class="text-2xl font-bold">Upcoming Events</h2>
-        <p>Stay updated with school events.</p>
+    <section id="events" class="p-10 bg-gray-50">
+        <h2 class="text-2xl font-bold mb-4">Upcoming Events</h2>
+        <p class="text-gray-600 mb-8">Stay updated with school events.</p>
+    
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Event 1: Sports Day -->
+            <div class="bg-white p-6 shadow-lg rounded-lg" data-aos="fade-right">
+                <img src="./image/images (4).jpg" alt="Sports Day" class="w-full h-48 object-cover mb-4 rounded">
+                <h3 class="text-xl font-semibold mb-2">Sports Day</h3>
+                <p class="text-gray-600 mb-4">Date: November 15, 2023</p>
+                <p class="text-gray-700">Join us for an exciting day of sports, games, and competitions. Students will participate in various events like relay races, tug-of-war, and more!</p>
+            </div>
+    
+            <!-- Event 2: Parent-Teacher Meeting -->
+            <div class="bg-white p-6 shadow-lg rounded-lg"data-aos="fade-right">
+                <img src="./image/images (4).jpg" alt="Sports Day" class="w-full h-48 object-cover mb-4 rounded">
+                <h3 class="text-xl font-semibold mb-2">Parent-Teacher Meeting</h3>
+                <p class="text-gray-600 mb-4">Date: November 20, 2023</p>
+                <p class="text-gray-700">Parents are invited to discuss their child's progress with teachers. This is a great opportunity to collaborate on your child's academic journey.</p>
+            </div>
+    
+            <!-- Event 3: Annual Cultural Festival -->
+            <div class="bg-white p-6 shadow-lg rounded-lg"data-aos="fade-right">
+                <img src="./image/images (4).jpg" alt="Sports Day" class="w-full h-48 object-cover mb-4 rounded">
+                <h3 class="text-xl font-semibold mb-2">Annual Cultural Festival</h3>
+                <p class="text-gray-600 mb-4">Date: December 5, 2023</p>
+                <p class="text-gray-700">Celebrate the diversity of our school community with music, dance, drama, and art performances by our talented students.</p>
+            </div>
+    
+            <!-- Event 4: Science Fair -->
+            <div class="bg-white p-6 shadow-lg rounded-lg" data-aos="fade-right">
+                <img src="./image/images (4).jpg" alt="Sports Day" class="w-full h-48 object-cover mb-4 rounded">
+                <h3 class="text-xl font-semibold mb-2">Science Fair</h3>
+                <p class="text-gray-600 mb-4">Date: December 10, 2023</p>
+                <p class="text-gray-700">Explore innovative projects and experiments created by our students. A day full of learning and discovery!</p>
+            </div>
+    
+            <!-- Event 5: School Picnic -->
+            <div class="bg-white p-6 shadow-lg rounded-lg" data-aos="fade-right">
+                <img src="./image/images (4).jpg" alt="Sports Day" class="w-full h-48 object-cover mb-4 rounded">
+                <h3 class="text-xl font-semibold mb-2">School Picnic</h3>
+                <p class="text-gray-600 mb-4">Date: December 18, 2023</p>
+                <p class="text-gray-700">A fun-filled day for students to relax and enjoy outdoor activities with their friends and teachers.</p>
+            </div>
+    
+            <!-- Event 6: Annual Day Celebration -->
+            <div class="bg-white p-6 shadow-lg rounded-lg" data-aos="fade-right">
+                <img src="./image/images (4).jpg" alt="Sports Day" class="w-full h-48 object-cover mb-4 rounded">
+                <h3 class="text-xl font-semibold mb-2">Annual Day Celebration</h3>
+                <p class="text-gray-600 mb-4">Date: January 10, 2024</p>
+                <p class="text-gray-700">Witness the grand celebration of our school's achievements. Awards, performances, and a memorable evening await!</p>
+            </div>
+        </div>
     </section>
+    <section id="staff" class="p-10 bg-gray-50">
+        <h2 class="text-2xl font-bold mb-4">Meet Our Teachers and Staff</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Teacher 1 (Mathematics) -->
+            <div class="bg-white p-6 shadow rounded" data-aos="fade-up">
+                <img src="./image/png-transparent-cartoon-service-employees-and-work-permits-company-boy-fictional-character.png" alt="Staff 1" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Mr. Alex Johnson</h3>
+                <p class="text-gray-700">Mathematics Teacher</p>
+                <p class="text-gray-600">"Passionate about making math fun and accessible for all students."</p>
+            </div>
+            <!-- Teacher 2 (Science) -->
+            <div class="bg-white p-6 shadow rounded" data-aos="fade-up" data-aos-delay="100">
+                <img src="./image/png-transparent-cartoon-service-employees-and-work-permits-company-boy-fictional-character.png" alt="Staff 1" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Ms. Emily Davis</h3>
+                <p class="text-gray-700">Science Teacher</p>
+                <p class="text-gray-600">"Dedicated to inspiring curiosity and a love for science in students."</p>
+            </div>
+            <!-- Teacher 3 (History) -->
+            <div class="bg-white p-6 shadow rounded" data-aos="fade-up" data-aos-delay="200">
+                <img src="./image/png-transparent-cartoon-service-employees-and-work-permits-company-boy-fictional-character.png" alt="Staff 1" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Mr. Michael Brown</h3>
+                <p class="text-gray-700">History Teacher</p>
+                <p class="text-gray-600">"Committed to bringing history to life through engaging lessons."</p>
+            </div>
+            <!-- Teacher 4 (English) -->
+            <div class="bg-white p-6 shadow rounded" data-aos="fade-up" data-aos-delay="300">
+                <img src="./image/png-transparent-cartoon-service-employees-and-work-permits-company-boy-fictional-character.png" alt="Staff 1" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Ms. Sarah Wilson</h3>
+                <p class="text-gray-700">English Teacher</p>
+                <p class="text-gray-600">"Focused on developing strong communication and literary skills."</p>
+            </div>
+            <!-- Teacher 5 (Physical Education) -->
+            <div class="bg-white p-6 shadow rounded" data-aos="fade-up" data-aos-delay="400">
+                <img src="./image/png-transparent-cartoon-service-employees-and-work-permits-company-boy-fictional-character.png" alt="Staff 1" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Mr. David Lee</h3>
+                <p class="text-gray-700">Physical Education Teacher</p>
+                <p class="text-gray-600">"Encouraging students to lead active and healthy lifestyles."</p>
+            </div>
+            <!-- Teacher 6 (Art) -->
+            <div class="bg-white p-6 shadow rounded" data-aos="fade-up" data-aos-delay="500">
+                <img src="./image/png-transparent-cartoon-service-employees-and-work-permits-company-boy-fictional-character.png" alt="Staff 1" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Ms. Laura Martinez</h3>
+                <p class="text-gray-700">Art Teacher</p>
+                <p class="text-gray-600">"Fostering creativity and self-expression through art."</p>
+            </div>
+            <!-- Teacher 7 (Nepali) -->
+            <div class="bg-white p-6 shadow rounded" data-aos="fade-up" data-aos-delay="600">
+                <img src="./image/png-transparent-cartoon-service-employees-and-work-permits-company-boy-fictional-character.png" alt="Staff 1" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Mr. Rajendra Sharma</h3>
+                <p class="text-gray-700">Nepali Teacher</p>
+                <p class="text-gray-600">"Dedicated to preserving and promoting Nepali language and culture."</p>
+            </div>
+            <!-- Teacher 8 (Social Studies) -->
+            <div class="bg-white p-6 shadow rounded" data-aos="fade-up" data-aos-delay="700">
+                <img src="./image/png-transparent-cartoon-service-employees-and-work-permits-company-boy-fictional-character.png" alt="Staff 1" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Ms. Sita Thapa</h3>
+                <p class="text-gray-700">Social Studies Teacher</p>
+                <p class="text-gray-600">"Instilling awareness of the world and society in students."</p>
+            </div>
+            <!-- Teacher 9 (ICT) -->
+            <div class="bg-white p-6 shadow rounded" data-aos="fade-up" data-aos-delay="800">
+                <img src="./image/png-transparent-cartoon-service-employees-and-work-permits-company-boy-fictional-character.png" alt="Staff 1" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Mr. Kiran Raj</h3>
+                <p class="text-gray-700">ICT Teacher</p>
+                <p class="text-gray-600">"Empowering students with digital skills for the modern world."</p>
+            </div>
+            <!-- Teacher 10 (Music) -->
+            <div class="bg-white p-6 shadow rounded" data-aos="fade-up" data-aos-delay="900">
+                <img src="./image/png-transparent-cartoon-service-employees-and-work-permits-company-boy-fictional-character.png" alt="Staff 1" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Ms. Priya Gurung</h3>
+                <p class="text-gray-700">Music Teacher</p>
+                <p class="text-gray-600">"Sharing the joy of music and rhythm with every student."</p>
+            </div>
+            <!-- Teacher 11 (Health & Physical Education) -->
+            <div class="bg-white p-6 shadow rounded" data-aos="fade-up" data-aos-delay="1000">
+                <img src="./image/png-transparent-cartoon-service-employees-and-work-permits-company-boy-fictional-character.png" alt="Staff 1" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Mr. Manoj Shrestha</h3>
+                <p class="text-gray-700">Health & Physical Education Teacher</p>
+                <p class="text-gray-600">"Promoting overall well-being and fitness among students."</p>
+            </div>
+        </div>
+    </section>
+    
     <section id="about" class="p-10">
         <h2 class="text-2xl font-bold mb-4">About Us</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <!-- President's Message -->
             <div class="bg-white p-6 shadow rounded" data-aos="fade-right">
+                <img src="./image/images (3).jpg" alt="Rahul Sharma" class="w-16 h-16 rounded-full mx-auto mb-2">
                 <h3 class="text-xl font-bold mb-2">Message from the President</h3>
-                <p class="text-gray-700">"At Suryodaya Vidhya Mandir, we are committed to providing a nurturing environment where students can grow academically, socially, and emotionally. Our goal is to empower every child to reach their full potential."</p>
-                <p class="mt-4 text-gray-600"><strong>Mr. John Doe</strong><br>President, Suryodaya Vidhya Mandir</p>
+                <p class="text-gray-700">"At ABC International School, we are committed to providing a nurturing environment where students can grow academically, socially, and emotionally. Our goal is to empower every child to reach their full potential."</p>
+                <p class="mt-4 text-gray-600"><strong>Mr. John Doe</strong><br>President, ABC International School</p>
             </div>
             <!-- Principal's Message -->
             <div class="bg-white p-6 shadow rounded" data-aos="fade-left">
+                <img src="./image/images (3).jpg" alt="Rahul Sharma" class="w-16 h-16 rounded-full mx-auto mb-2">
                 <h3 class="text-xl font-bold mb-2">Message from the Principal</h3>
                 <p class="text-gray-700">"Education is not just about academics; it's about shaping character and fostering a love for learning. We strive to create a community where every student feels valued and inspired to excel."</p>
-                <p class="mt-4 text-gray-600"><strong>Ms. Jane Smith</strong><br>Principal, Suryodaya Vidhya Mandir</p>
+                <p class="mt-4 text-gray-600"><strong>Ms. Jane Smith</strong><br>Principal, ABC International School</p>
             </div>
         </div>
     </section>
-    
+    <section id="nonteachingstaff" class="p-10 bg-gray-50">
+        <h2 class="text-2xl font-bold mb-4">Meet Our Non-Teaching Staff</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Staff 1 (Librarian) -->
+            <div class="bg-white p-6 shadow rounded" data-aos="fade-up">
+                <img src="./image/images (5).jpg" alt="Staff 1" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Ms. Anita Sharma</h3>
+                <p class="text-gray-700">Librarian</p>
+                <p class="text-gray-600">"Ensuring students have access to a wealth of knowledge and resources."</p>
+            </div>
+            <!-- Staff 2 (Administrative Officer) -->
+            <div class="bg-white p-6 shadow rounded" data-aos="fade-up" data-aos-delay="100">
+                <img src="./image/images (5).jpg" alt="Staff 2" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Mr. Ramesh Thapa</h3>
+                <p class="text-gray-700">Administrative Officer</p>
+                <p class="text-gray-600">"Managing school operations efficiently and effectively."</p>
+            </div>
+            <!-- Staff 3 (Counselor) -->
+            <div class="bg-white p-6 shadow rounded" data-aos="fade-up" data-aos-delay="200">
+                <img src="./image/images (5).jpg" alt="Staff 3" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Ms. Sunita Rai</h3>
+                <p class="text-gray-700">Counselor</p>
+                <p class="text-gray-600">"Providing guidance and support to students for their well-being."</p>
+            </div>
+            <!-- Staff 4 (IT Support) -->
+            <div class="bg-white p-6 shadow rounded" data-aos="fade-up" data-aos-delay="300">
+                <img src="./image/images (5).jpg" alt="Staff 4" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Mr. Suresh Karki</h3>
+                <p class="text-gray-700">IT Support</p>
+                <p class="text-gray-600">"Ensuring smooth and efficient technology operations."</p>
+            </div>
+            <!-- Staff 5 (Accountant) -->
+            <div class="bg-white p-6 shadow rounded" data-aos="fade-up" data-aos-delay="400">
+                <img src="./image/images (5).jpg" alt="Staff 5" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Ms. Rekha Gurung</h3>
+                <p class="text-gray-700">Accountant</p>
+                <p class="text-gray-600">"Managing school finances with accuracy and integrity."</p>
+            </div>
+            <!-- Staff 6 (Security) -->
+            <div class="bg-white p-6 shadow rounded" data-aos="fade-up" data-aos-delay="500">
+                <img src="./image/images (5).jpg" alt="Staff 6" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Mr. Rajesh Singh</h3>
+                <p class="text-gray-700">Security</p>
+                <p class="text-gray-600">"Ensuring the safety and security of the school premises."</p>
+            </div>
+            <!-- Staff 7 (Vehicle Driver 1) -->
+            <div class="bg-white p-6 shadow rounded" data-aos="fade-up" data-aos-delay="600">
+                <img src="./image/images (6).jpg" alt="Staff 7" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Mr. Hari Bahadur</h3>
+                <p class="text-gray-700">Vehicle Driver</p>
+                <p class="text-gray-600">"Ensuring safe and timely transportation for students."</p>
+            </div>
+            <!-- Staff 8 (Vehicle Driver 2) -->
+            <div class="bg-white p-6 shadow rounded" data-aos="fade-up" data-aos-delay="700">
+                <img src="./image/images (6).jpg" alt="Staff 8" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Mr. Ram Bahadur</h3>
+                <p class="text-gray-700">Vehicle Driver</p>
+                <p class="text-gray-600">"Ensuring safe and timely transportation for students."</p>
+            </div>
+            <!-- Staff 9 (Vehicle Driver 3) -->
+            <div class="bg-white p-6 shadow rounded" data-aos="fade-up" data-aos-delay="800">
+                <img src="./image/images (6).jpg" alt="Staff 9" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Mr. Shyam Bahadur</h3>
+                <p class="text-gray-700">Vehicle Driver</p>
+                <p class="text-gray-600">"Ensuring safe and timely transportation for students."</p>
+            </div>
+            <!-- Staff 10 (Vehicle Driver 4) -->
+            <div class="bg-white p-6 shadow rounded" data-aos="fade-up" data-aos-delay="900">
+                <img src="./image/images (6).jpg" alt="Staff 10" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Mr. Gopal Bahadur</h3>
+                <p class="text-gray-700">Vehicle Driver</p>
+                <p class="text-gray-600">"Ensuring safe and timely transportation for students."</p>
+            </div>
+            <!-- Staff 11 (Vehicle Driver 5) -->
+            <div class="bg-white p-6 shadow rounded" data-aos="fade-up" data-aos-delay="1000">
+                <img src="./image/images (6).jpg" alt="Staff 11" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Mr. Krishna Bahadur</h3>
+                <p class="text-gray-700">Vehicle Driver</p>
+                <p class="text-gray-600">"Ensuring safe and timely transportation for students."</p>
+            </div>
+            <!-- Staff 12 (Vehicle Driver 6) -->
+            <div class="bg-white p-6 shadow rounded" data-aos="fade-up" data-aos-delay="1100">
+                <img src="./image/images (6).jpg" alt="Staff 12" class="w-24 h-24 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-bold mb-2">Mr. Raju Bahadur</h3>
+                <p class="text-gray-700">Vehicle Driver</p>
+                <p class="text-gray-600">"Ensuring safe and timely transportation for students."</p>
+            </div>
+        </div>
+    </section>
+
+</div>
+<section id="transportation" class="p-10 bg-gray-50">
+    <h2 class="text-2xl font-bold mb-4">Transportation Services</h2>
+    <p class="text-gray-600 mb-8">To ensure safe and efficient transportation for students, we have a fleet of 6 long buses and vehicles dedicated to school commutes. Below is the list of buses and their details:</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Bus A -->
+        <div class="bg-white p-6 shadow rounded" data-aos="fade-up">
+            <img src="./image/bus.png" alt="Bus A" class="w-full h-48 object-cover rounded-t-lg mb-4">
+            <h3 class="text-xl font-bold mb-2">Bus A</h3>
+            <p><strong>Type:</strong> Long Bus</p>
+            <p><strong>Capacity:</strong> 50 students</p>
+            <p><strong>Route:</strong> Main Campus to North District</p>
+            <p><strong>Features:</strong> Air-conditioned, GPS tracking, and safety cameras.</p>
+        </div>
+        <!-- Bus B -->
+        <div class="bg-white p-6 shadow rounded" data-aos="fade-up" data-aos-delay="100">
+            <img src="./image/bus.png" alt="Bus B" class="w-full h-48 object-cover rounded-t-lg mb-4">
+            <h3 class="text-xl font-bold mb-2">Bus B</h3>
+            <p><strong>Type:</strong> Long Bus</p>
+            <p><strong>Capacity:</strong> 50 students</p>
+            <p><strong>Route:</strong> Main Campus to South District</p>
+            <p><strong>Features:</strong> Air-conditioned, wheelchair accessible, and safety cameras.</p>
+        </div>
+        <!-- Bus C -->
+        <div class="bg-white p-6 shadow rounded" data-aos="fade-up" data-aos-delay="200">
+            <img src="./image/bus.png" alt="Bus C" class="w-full h-48 object-cover rounded-t-lg mb-4">
+            <h3 class="text-xl font-bold mb-2">Bus C</h3>
+            <p><strong>Type:</strong> Long Bus</p>
+            <p><strong>Capacity:</strong> 50 students</p>
+            <p><strong>Route:</strong> Main Campus to East District</p>
+            <p><strong>Features:</strong> Air-conditioned, GPS tracking, and emergency exits.</p>
+        </div>
+        <!-- Bus D -->
+        <div class="bg-white p-6 shadow rounded" data-aos="fade-up" data-aos-delay="300">
+            <img src="./image/bus.png" alt="Bus D" class="w-full h-48 object-cover rounded-t-lg mb-4">
+            <h3 class="text-xl font-bold mb-2">Bus D</h3>
+            <p><strong>Type:</strong> Long Bus</p>
+            <p><strong>Capacity:</strong> 50 students</p>
+            <p><strong>Route:</strong> Main Campus to West District</p>
+            <p><strong>Features:</strong> Air-conditioned, safety cameras, and first-aid kit.</p>
+        </div>
+        <!-- Vehicle E -->
+        <div class="bg-white p-6 shadow rounded" data-aos="fade-up" data-aos-delay="400">
+            <img src="./image/vehicle.jpg" alt="Vehicle E" class="w-full h-48 object-cover rounded-t-lg mb-4">
+            <h3 class="text-xl font-bold mb-2">Vehicle E</h3>
+            <p><strong>Type:</strong> Minibus</p>
+            <p><strong>Capacity:</strong> 20 students</p>
+            <p><strong>Route:</strong> Main Campus to Central District</p>
+            <p><strong>Features:</strong> Air-conditioned, GPS tracking, and safety belts.</p>
+        </div>
+        <!-- Vehicle F -->
+        <div class="bg-white p-6 shadow rounded" data-aos="fade-up" data-aos-delay="500">
+            <img src="./image/vehicle.jpg" alt="Vehicle F" class="w-full h-48 object-cover rounded-t-lg mb-4">
+            <h3 class="text-xl font-bold mb-2">Vehicle F</h3>
+            <p><strong>Type:</strong> Minibus</p>
+            <p><strong>Capacity:</strong> 20 students</p>
+            <p><strong>Route:</strong> Main Campus to Suburban Areas</p>
+            <p><strong>Features:</strong> Air-conditioned, safety cameras, and first-aid kit.</p>
+        </div>
+    </div>
+</section>
     <!-- Testimonials Section -->
     <section class="p-10 bg-gray-50">
+        
         <h2 class="text-2xl font-bold mb-4">What Our Alumni Say</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <!-- Testimonial 1 -->
             <div class="bg-white p-6 shadow rounded" data-aos="zoom-in">
-                <p class="text-gray-700">"Suryodaya Vidhya Mandir gave me the foundation to succeed in life. The teachers were supportive, and the environment was always encouraging."</p>
-                <p class="mt-4 text-gray-600"><strong>Rahul Sharma</strong><br>Software Engineer, Google</p>
+                <img src="./image/logo.png" alt="Rahul Sharma" class="w-16 h-16 rounded-full mx-auto mb-2">
+                <p class="text-gray-700">"ABC International School gave me the foundation to succeed in life. The teachers were supportive, and the environment was always encouraging."</p>
+                <p class="mt-4 text-gray-600">
+                    <strong>Rahul Sharma</strong><br>Software Engineer, Google</p>
             </div>
             <!-- Testimonial 2 -->
             <div class="bg-white p-6 shadow rounded" data-aos="zoom-in" data-aos-delay="100">
+                <img src="./image/logo.png" alt="Rahul Sharma" class="w-16 h-16 rounded-full mx-auto mb-2">
                 <p class="text-gray-700">"The school not only focused on academics but also on extracurricular activities, which helped me develop a well-rounded personality."</p>
                 <p class="mt-4 text-gray-600"><strong>Priya Patel</strong><br>Doctor, ABC Hospital</p>
             </div>
             <!-- Testimonial 3 -->
             <div class="bg-white p-6 shadow rounded" data-aos="zoom-in" data-aos-delay="200">
-                <p class="text-gray-700">"I am grateful for the values and discipline instilled in me at Suryodaya Vidhya Mandir. It has been instrumental in my career and personal life."</p>
-                <p class="mt-4 text-gray-600"><strong>Anil Kumar</strong><br>Entrepreneur</p>
+                <img src="./image/logo.png" alt="Rahul Sharma" class="w-16 h-16 rounded-full mx-auto mb-2">
+                <p class="text-gray-700">"I am grateful for the values and discipline instilled in me at ABC International School. It has been instrumental in my career and personal life."</p>
+                <p class="mt-4 text-gray-600"><strong>Paribesh Sapkota</strong><br>Entrepreneur</p>
             </div>
         </div>
     </section>
+    <section id="contactus" class="p-10 bg-red-50">
+        <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+        <form class="bg-white p-6 shadow rounded" data-aos="fade-up" onsubmit="sendMessage(event)">
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+                <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded" required>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded" required>
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+                <textarea id="message" name="message" class="w-full p-2 border border-gray-300 rounded" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Send Message</button>
+        </form>
+    </section>
     
+    <script>
+        function sendMessage(event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
+    
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+    
+            // Here you can add code to send the form data to a server using fetch or XMLHttpRequest
+            // For now, we'll just log the data to the console
+            console.log('Name:', name);
+            console.log('Email:', email);
+            console.log('Message:', message);
+    
+            // Display a success message
+            alert('Message sent successfully!');
+    
+            // Optionally, you can reset the form after submission
+            event.target.reset();
+        }
+    </script>
+
     <footer id="contact" class="bg-blue-600 text-white text-center p-4 mt-10">
-        <p>&copy; 2025 Suryodaya Vidhya Mandir. All rights reserved.</p>
+        <p>&copy; 2025 ABC International School. All rights reserved.</p>
         <p>Email: contact@suryodayavidya.edu | Phone: +123-456-7890</p>
         <p>Follow us: <a href="#" class="underline">Facebook</a> | <a href="#" class="underline">Instagram</a></p>
         <iframe src="https://maps.google.com/maps?q=Suryodaya%20Vidhya%20Mandir&t=&z=13&ie=UTF8&iwloc=&output=embed" class="w-full h-64 mt-4"></iframe>

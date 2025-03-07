@@ -11,7 +11,7 @@
         <form id="admissionForm" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
             <!-- Header -->
             <div class="text-center mb-8">
-                <h1 class="text-3xl font-bold text-blue-600">Suryodaya Vidya Mandir School</h1>
+                <h1 class="text-3xl font-bold text-blue-600">ABC International School</h1>
                 <p class="text-gray-600 mt-2">Admission Application Form 2025-2026</p>
             </div>
 
@@ -99,14 +99,14 @@
             <!-- Emergency Contact -->
             <div class="mb-8">
                 <h2 class="text-xl font-semibold mb-4 text-gray-700">Emergency Contact</h2>
-                <div class="space-y-4">
+                <div id="emergencyContacts" class="space-y-4">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
                             <label class="block text-gray-700 text-sm font-bold mb-2" for="emergency-name">
                                 Contact Name <span class="text-red-500">*</span>
                             </label>
                             <input class="w-full px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                                   id="emergency-name" name="emergencyName" type="text" required>
+                                   id="emergency-name" name="emergencyName[]" type="text" required>
                         </div>
 
                         <div>
@@ -114,16 +114,16 @@
                                 Contact Number <span class="text-red-500">*</span>
                             </label>
                             <input class="w-full px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" 
-                                   id="emergency-phone" name="emergencyPhone" type="tel" required>
+                                   id="emergency-phone" name="emergencyPhone[]" type="tel" required>
                         </div>
                     </div>
-                    <button type="button" class="text-blue-600 hover:text-blue-800 text-sm flex items-center">
-                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
-                        </svg>
-                        Add Another Emergency Contact
-                    </button>
                 </div>
+                <button type="button" id="addEmergencyContact" class="text-blue-600 hover:text-blue-800 text-sm flex items-center mt-4">
+                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                    </svg>
+                    Add Another Emergency Contact
+                </button>
             </div>
 
             <!-- Declaration -->
@@ -151,7 +151,7 @@
         </form>
     </div>
 
-    <!-- JavaScript for Form Submission -->
+    <!-- JavaScript for Form Submission and Adding Emergency Contacts -->
     <script>
         document.getElementById('admissionForm').addEventListener('submit', function (event) {
             event.preventDefault(); // Prevent the default form submission
@@ -160,7 +160,14 @@
             const formData = new FormData(event.target);
             const data = {};
             formData.forEach((value, key) => {
-                data[key] = value;
+                if (data[key]) {
+                    if (!Array.isArray(data[key])) {
+                        data[key] = [data[key]];
+                    }
+                    data[key].push(value);
+                } else {
+                    data[key] = value;
+                }
             });
 
             // Log the form data to the console (for demonstration)
@@ -169,6 +176,30 @@
             // For now, just show a success message
             alert('Form submitted successfully!');
             event.target.reset(); // Reset the form after submission
+        });
+
+        // Function to add another emergency contact
+        document.getElementById('addEmergencyContact').addEventListener('click', function () {
+            const emergencyContacts = document.getElementById('emergencyContacts');
+            const newContactFields = document.createElement('div');
+            newContactFields.className = 'grid grid-cols-1 md:grid-cols-2 gap-4 mt-4';
+            newContactFields.innerHTML = `
+                <div>
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="emergency-name">
+                        Contact Name <span class="text-red-500">*</span>
+                    </label>
+                    <input class="w-full px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                           name="emergencyName[]" type="text" required>
+                </div>
+                <div>
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="emergency-phone">
+                        Contact Number <span class="text-red-500">*</span>
+                    </label>
+                    <input class="w-full px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                           name="emergencyPhone[]" type="tel" required>
+                </div>
+            `;
+            emergencyContacts.appendChild(newContactFields);
         });
     </script>
 </body>
