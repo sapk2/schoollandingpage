@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suryodaya Vidhya Mandir</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body class="bg-gray-100" onload="AOS.init();">
+    <nav class="bg-blue-600 p-4 text-white flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <img src="./image/logo.png" alt="School Logo" class="h-10">
+            <h1 class="text-xl font-bold">Suryodaya Vidhya Mandir</h1>
+        </div>
+        <ul class="flex space-x-4">
+            <li><a href="#home" class="hover:underline">Home</a></li>
+            <li><a href="#classes" class="hover:underline">Classes</a></li>
+            <li><a href="#notice" class="hover:underline">Notice</a></li>
+            <li><a href="#events" class="hover:underline">Events</a></li>
+            <li><a href="#about" class="hover:underline">About Us</a></li>
+        </ul>
+        <a href="#contact" class="bg-white text-blue-600 px-4 py-2 rounded">Contact Us</a>
+    </nav>
+    
+    <section id="home" class="text-center p-10 text-white bg-cover bg-center h-[500px] flex flex-col justify-center items-center relative" style="background-image: url('./image/school.jpg'); background-size: cover; background-position: fixed;" data-aos="fade-up">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <h2 class="text-4xl font-bold text-gray-100 relative z-10">Welcome to Suryodaya Vidhya Mandir</h2>
+        <p class="mt-2 text-lg relative z-10">A place for quality education and holistic development.</p>
+        <div class="mt-4 relative z-10">
+            <a href="admission.html" class="bg-white text-blue-600 px-6 py-3 rounded shadow-lg">Apply Now</a>
+            <a href="#about" class="ml-4 border border-white px-6 py-3 rounded shadow-lg">Learn More</a>
+        </div>
+    </section>
+    
+    <section id="classes" class="p-10">
+        <h2 class="text-2xl font-bold mb-4">Our Classes</h2>
+        <div class="grid grid-cols-3 gap-4">
+            <div class="bg-white p-4 shadow rounded" data-aos="fade-up">
+                <img src="./image/images.jpg" alt="Class" class="w-full mb-2">
+                <h3 class="font-bold">Nursery</h3>
+                <p>Foundation for young learners.</p>
+                <p><strong>Subjects:</strong> 5</p>
+                <p><strong>Students:</strong> 30</p>
+                
+            </div>
+            <div class="bg-white p-4 shadow rounded" data-aos="fade-up" data-aos-delay="100">
+                <img src="./image/images (1).jpg" alt="Class" class="w-full mb-2">
+                <h3 class="font-bold">Class 1</h3>
+                <p>Basic primary education.</p>
+                <p><strong>Subjects:</strong> 7</p>
+                <p><strong>Students:</strong> 35</p>
+            </div>
+            <div class="bg-white p-4 shadow rounded" data-aos="fade-up" data-aos-delay="200">
+                <img src="./image/images (2).jpg" alt="Class" class="w-full mb-2">
+                <h3 class="font-bold">Class 10</h3>
+                <p>Preparation for board exams.</p>
+                <p><strong>Subjects:</strong> 10</p>
+                <p><strong>Students:</strong> 40</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="notice" class="p-10">
+        <h2 class="text-2xl font-bold mb-4">Notice Board</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="bg-white p-4 shadow rounded" data-aos="zoom-in">
+                <h3 class="font-bold text-lg">Exam Notices</h3>
+                <p>Latest updates on upcoming exams and schedules.</p>
+            </div>
+            <div class="bg-white p-4 shadow rounded" data-aos="zoom-in" data-aos-delay="100">
+                <h3 class="font-bold text-lg">Sports Events</h3>
+                <p>Information about inter-school and intra-school sports competitions.</p>
+            </div>
+            <div class="bg-white p-4 shadow rounded" data-aos="zoom-in" data-aos-delay="200">
+                <h3 class="font-bold text-lg">Exam Routine</h3>
+                <p>Timetable and important details for scheduled exams.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="events" class="p-10">
+        <h2 class="text-2xl font-bold">Upcoming Events</h2>
+        <p>Stay updated with school events.</p>
+    </section>
+    <section id="about" class="p-10">
+        <h2 class="text-2xl font-bold mb-4">About Us</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- President's Message -->
+            <div class="bg-white p-6 shadow rounded" data-aos="fade-right">
+                <h3 class="text-xl font-bold mb-2">Message from the President</h3>
+                <p class="text-gray-700">"At Suryodaya Vidhya Mandir, we are committed to providing a nurturing environment where students can grow academically, socially, and emotionally. Our goal is to empower every child to reach their full potential."</p>
+                <p class="mt-4 text-gray-600"><strong>Mr. John Doe</strong><br>President, Suryodaya Vidhya Mandir</p>
+            </div>
+            <!-- Principal's Message -->
+            <div class="bg-white p-6 shadow rounded" data-aos="fade-left">
+                <h3 class="text-xl font-bold mb-2">Message from the Principal</h3>
+                <p class="text-gray-700">"Education is not just about academics; it's about shaping character and fostering a love for learning. We strive to create a community where every student feels valued and inspired to excel."</p>
+                <p class="mt-4 text-gray-600"><strong>Ms. Jane Smith</strong><br>Principal, Suryodaya Vidhya Mandir</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="p-10 bg-gray-50">
+        <h2 class="text-2xl font-bold mb-4">What Our Alumni Say</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Testimonial 1 -->
+            <div class="bg-white p-6 shadow rounded" data-aos="zoom-in">
+                <p class="text-gray-700">"Suryodaya Vidhya Mandir gave me the foundation to succeed in life. The teachers were supportive, and the environment was always encouraging."</p>
+                <p class="mt-4 text-gray-600"><strong>Rahul Sharma</strong><br>Software Engineer, Google</p>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="bg-white p-6 shadow rounded" data-aos="zoom-in" data-aos-delay="100">
+                <p class="text-gray-700">"The school not only focused on academics but also on extracurricular activities, which helped me develop a well-rounded personality."</p>
+                <p class="mt-4 text-gray-600"><strong>Priya Patel</strong><br>Doctor, ABC Hospital</p>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="bg-white p-6 shadow rounded" data-aos="zoom-in" data-aos-delay="200">
+                <p class="text-gray-700">"I am grateful for the values and discipline instilled in me at Suryodaya Vidhya Mandir. It has been instrumental in my career and personal life."</p>
+                <p class="mt-4 text-gray-600"><strong>Anil Kumar</strong><br>Entrepreneur</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="contact" class="bg-blue-600 text-white text-center p-4 mt-10">
+        <p>&copy; 2025 Suryodaya Vidhya Mandir. All rights reserved.</p>
+        <p>Email: contact@suryodayavidya.edu | Phone: +123-456-7890</p>
+        <p>Follow us: <a href="#" class="underline">Facebook</a> | <a href="#" class="underline">Instagram</a></p>
+        <iframe src="https://maps.google.com/maps?q=Suryodaya%20Vidhya%20Mandir&t=&z=13&ie=UTF8&iwloc=&output=embed" class="w-full h-64 mt-4"></iframe>
+    </footer>
+</body>
+</html>
